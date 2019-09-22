@@ -1,0 +1,32 @@
+	<<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			// a = true;
+			// b = false;
+			let a = Number(prompt('Введите число 1'))
+			let b = Number(prompt('Введите число 2'))
+			let c = Number(prompt('Введите число 3'))
+			console.log('a= ',a);
+			console.log('b= ',b);
+			console.log('c= ',c);
+			if ((a<b)&&(c<b)){
+				console.log('Из трех чисел ', a ,b ,' и ', c , ' ,большим оказалось:', b);
+	}
+			else if ((b<a)&&(c<a)){
+				console.log('Из трех чисел ', a ,b ,' и ', c , ' ,большим оказалось:', a);
+	}
+			else if ((a<c)&&(b<c)){
+				console.log('Из трех чисел ', a ,b ,' и ', c , ' ,большим оказалось:', c);
+	}
+			else if (a=b=c){
+				console.log('Все числа равны');
+	}
+		</script>
+		
+	</body>
+	</html>

@@ -1,0 +1,37 @@
+	<<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			// a = true;
+			// b = false;
+			let a = Number(prompt('Введите число 1'))
+			let b = Number(prompt('Введите число 2'))
+			let c = Number(prompt('Введите число 3'))
+			let d = Number(prompt('Введите число 4'))
+			console.log('a= ',a);
+			console.log('b= ',b);
+			console.log('c= ',c);
+			console.log('d= ',d);
+			if ((a<b)&&(c<b)&&(d<b)){
+				console.log('Из четырех чисел ', a ,b , c ,' и ', d , ' ,большим оказалось:', b);
+	}
+			else if ((b<a)&&(c<a)&&(d<a)){
+				console.log('Из четырех чисел ', a ,b , c ,' и ', d , ' ,большим оказалось:', a);
+	}
+			else if ((a<c)&&(d<c)&&(d<c)){
+				console.log('Из четырех чисел ', a ,b , c ,' и ', d , ' ,большим оказалось:', c);
+	}
+				else if ((a<d)&&(b<d)&&(c<d)){
+				console.log('Из четырех чисел ', a ,b , c ,' и ', d , ' ,большим оказалось:', d);
+	}
+			else if (a=b=c=d){
+				console.log('Все числа равны');
+	}
+		</script>
+		
+	</body>
+	</html>

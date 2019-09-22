@@ -1,0 +1,42 @@
+	<<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			// a = true;
+			// b = false;
+			let a = Number(prompt('Введите число 1'))
+			let b = Number(prompt('Введите число 2'))
+			let c = Number(prompt('Введите число 3'))
+			let d = Number(prompt('Введите число 4'))
+			let e = Number(prompt('Введите число 5'))
+			console.log('a= ',a);
+			console.log('b= ',b);
+			console.log('c= ',c);
+			console.log('d= ',d);
+			console.log('e= ',e);
+			if ((a<b)&&(c<b)&&(d<b)&&(e<b)){
+				console.log('Из пяти чисел ', a ,b , c , d , ' и ', e , ' ,большим оказалось:', b);
+	}
+			else if ((b<a)&&(c<a)&&(d<a)&&(e<a)){
+				console.log('Из пяти чисел ', a ,b , c , d , ' и ', e , ' ,большим оказалось:', a);
+	}
+			else if ((a<c)&&(b<c)&&(d<c)&&(e<c)){
+				console.log('Из пяти чисел ', a ,b , c , d , ' и ', e , ' ,большим оказалось:', c);
+	}
+				else if ((a<d)&&(b<d)&&(c<d)&&(e<d)){
+				console.log('Из пяти чисел ', a ,b , c , d , ' и ', e , ' ,большим оказалось:', d);
+	}
+					else if ((a<e)&&(b<e)&&(c<e)&&(d<e)){
+				console.log('Из пяти чисел ', a ,b , c , d , ' и ', e , ' ,большим оказалось:', e);
+	}
+			else if (a=b=c=d=e){
+				console.log('Все числа равны');
+	}
+		</script>
+		
+	</body>
+	</html>
