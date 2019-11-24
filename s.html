@@ -1,0 +1,45 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  	<meta charset="UTF-8">
+  	<title>Document</title>
+  	<style>
+  		input {
+  			display: block;
+  			margin: 1em;
+  		}
+  	</style>
+  </head>
+  <body>
+  	<input id="text" type="text"/>
+  	<input type="email" value="">
+  	<input type="password" value="">
+  	<input type="radio" value="Кружок)">
+  	<input type="checkbox" value="Галочка)">
+  	<input type="submit" value="Отправить">
+  	<input type="button" value="Кнопка">
+  	<p id='inputText'></p>
+  	<script>
+
+  		let text = document.getElementById('text');
+  		let inputs= document.getElementsByTagName('input');
+  		const changeText = function() {
+  			console.log(this.value);
+  		} 
+  		const focusIn = function() {
+  			console.log('Зашли в input. Теперь можжно вводить текст')
+  		}
+  		const focusOut = function() {
+  			console.log('Вышли из input. Больше нельзя вводить текст')
+  		}
+  		for (let input of inputs) {
+  			text.addEventListener('change',changeText,false)
+  			text.addEventListener('focus',focusIn,false)
+  			text.addEventListener('blur',focusOut,false)
+  		}
+  		
+		//changeText.call(text)
+
+	</script>
+</body>
+</html>
