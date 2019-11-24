@@ -3,21 +3,39 @@
   <head>
   	<meta charset="UTF-8">
   	<title>Document</title>
+  	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
   	<style>
+  		* {
+			box-sizing: border-box;
+  		}
+  		body {
+  			margin: 0;
+  			font-family: 'Roboto', sans-serif;
+  		}
+  		.form-container {
+  			max-width: 450px;
+  			width: 95%;
+  			margin: auto;
+  		}
+  		#form {
+
+  		}
+
   		input {
   			display: block;
-  			margin: 1em;
+  			width: 100%;
+  			margin: 0.5rem 0;
+  			padding: 0.4rem 0;
   		}
   	</style>
   </head>
   <body>
-  	<input id="text" type="text"/>
-  	<input type="email" value="">
-  	<input type="password" value="">
-  	<input type="radio" value="Кружок)">
-  	<input type="checkbox" value="Галочка)">
-  	<input type="submit" value="Отправить">
-  	<input type="button" value="Кнопка">
+  	<div class='form-container'>
+  	<form id='form' action=""></form>
+  	<input id="name" type="text" value="" placeholder="Your name">
+  	<input id="email" type="E-mail" value="" placeholder="E-mail">
+  	<input id="submit" type="submit" value="Submit!">
+  	</div>
   	<p id='inputText'></p>
   	<script>
 
